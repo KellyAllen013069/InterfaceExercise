@@ -36,6 +36,41 @@ namespace InterfaceExercise
                  */
 
             //Now, create objects of your 3 classes and give their members values.
+            Car car = new Car
+            {
+                NumberOfWheels = 4,
+                Make = "Toyota",
+                Model = "Camry",
+                Year = 1899,
+                Logo = "Toyota Logo",
+                HeadquartersLocation = "Japan",
+                HasTrunk = true,
+                CarType = "Sedan"
+            };
+
+            Truck truck = new Truck
+            {
+                NumberOfWheels = 18,
+                Make = "Ford",
+                Model = "F-150",
+                Year = 1955,
+                Logo = "Ford Logo",
+                HeadquartersLocation = "USA",
+                CargoCapacity = 10,
+                HasTrailer = true
+            };
+
+            SUV suv = new SUV
+            {
+                NumberOfWheels = 4,
+                Make = "Jeep",
+                Model = "Grand Cherokee",
+                Year = 2024,
+                Logo = "Jeep Logo",
+                HeadquartersLocation = "USA",
+                NumberOfSeats = 7,
+                HasFourWheelDrive = true
+            };
             //Creatively display and organize their values
             
             //Option for displaying values: 
@@ -43,7 +78,11 @@ namespace InterfaceExercise
             //Implement the stubbed out method in the derived classes.
             //In the scope of them method, use string interpolation to display property values.
             //In order to also interpolate values from ICompany, research how to extend interfaces.
-            
+            car.DisplayDetails();
+            Console.WriteLine("------------------");
+            truck.DisplayDetails();
+            Console.WriteLine("------------------");
+            suv.DisplayDetails();
         }
     }
 }
